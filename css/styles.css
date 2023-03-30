@@ -3,8 +3,10 @@
     --title-text-color: #2E2F42;
     --secondary-text-color:#ffffff;
     --footer-text-color:#F4F4FD;
+    --white-text-color:#ffffff;
     --accent_color:#404BBF;
     --button-bg-color:#4D5AE5;
+    --icons-bg-color:#4D5AE5;
     
 }
 
@@ -170,8 +172,12 @@ ul{
     
 }
 .business{
+    width: 1440px;
+    margin: 0 auto;
+
     padding: 188px 0 ;
     background: var(--title-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) ,url(../images/people-office.jpeg);
     /* min-height: 600px; */
     /* display: flex;
     align-items: center;
@@ -235,6 +241,32 @@ ul{
     
     
 }
+
+/* icons------------------------- */
+.work-list-icons{
+    width: 264px;
+    height: 112px;
+    background-color:#F4F4FD;
+    margin-bottom: 8px;
+}
+
+.section-icons-list{
+   
+    display: flex;
+    gap: 24px;
+    padding: 0 16px;
+    margin-bottom: 32px;
+}
+
+.section-icons-list li{
+    background-color: var(--icons-bg-color);
+    border-radius:50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+
 
 /* title h2 */
 .section-title{
@@ -354,6 +386,34 @@ ul{
       
 }
 
+/* ------------section-customers -------------- */
+.customers-section{
+    padding: 120px 0;
+}
+
+.customers-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    margin-bottom: 72px;
+}
+
+.customers-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+   
+}
+.customers-list li{
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
 /* PORTFOLIO */
 
 /* section breadcrumb-item */
@@ -448,15 +508,19 @@ ul{
 /* footer */
 .foter-container{
     display: flex;
+    gap: 120px;
    
-    flex-direction: column;
+    
 }
+
+
 
 .footer{
     background: var(--title-text-color);
     padding:100px 0 100px 0;
 }
 .footer-logo{
+    display: block;
     font-family: 'Raleway', sans-serif; 
     color: var(--button-bg-color);
     text-decoration: none;
@@ -479,4 +543,27 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
+}
+.fotter-icons-title{
+    color: var(--white-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.fotter-icons-list{
+    display: flex;
+    gap: 24px;
+
+    
+}
+
+.fotter-icons-list li{
+    background-color: var(--icons-bg-color);
+    border-radius:50%;
+    display: block;
+    width: 40px;
+    height: 40px;
 }
