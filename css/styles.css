@@ -7,6 +7,7 @@
     --accent_color:#404BBF;
     --button-bg-color:#4D5AE5;
     --icons-bg-color:#4D5AE5;
+    --icon-fill-silver:  #8E8F99;
     
 }
 
@@ -136,6 +137,10 @@ ul{
     
 }
 
+
+
+
+
 .adress-info{
     display: flex;
     align-items: center;
@@ -221,6 +226,7 @@ ul{
 .button:hover,
 .button:focus{
     background-color: var(--accent_color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ------------section-------------- */
@@ -243,27 +249,142 @@ ul{
 }
 
 /* icons------------------------- */
+
+/* -----work-icon */
 .work-list-icons{
     width: 264px;
     height: 112px;
     background-color:#F4F4FD;
     margin-bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.work-icons{
+    width: 64px;
+    height: 64px;
+}
+
+/* ------------customers-icon */
+
+.customers-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+   
+}
+.customers-list li{
+    width: 168px;
+    height: 88px;
+}
+
+.customers-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-fill-silver);
+    border-radius: 4px;
+}
+.customers-icon{
+    fill: var(--icon-fill-silver);
+    
+    width: 104px;
+    height: 56px;
+}
+
+.customers-link:hover,
+.customers-link:focus{
+    border: 1px solid var(--accent_color);
+}
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon{
+    fill: var(--accent_color);
+       
+}
+
+
+
+/* ----team-icons */
 
 .section-icons-list{
    
     display: flex;
     gap: 24px;
-    padding: 0 16px;
+    justify-content: center; 
     margin-bottom: 32px;
 }
 
 .section-icons-list li{
-    background-color: var(--icons-bg-color);
-    border-radius:50%;
-    display: block;
     width: 40px;
     height: 40px;
+}
+
+.section-icons-link{
+    background-color: var(--icons-bg-color);
+    border-radius:50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.section-icon{
+    width: 16px;
+    height: 16px;
+    fill: var(--footer-text-color)
+}
+
+.section-icons-link:hover,
+.section-icons-link:focus{
+    background-color: var(--accent_color)
+
+}
+
+/* --------------foter icons */
+.fotter-icons-list{
+   
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+    
+    
+}
+.fotter-icons-item{
+   
+    width: 40px;
+    height: 40px; 
+
+   
+}
+
+.fotter-icons-link{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-text-color);
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fotter-icons{
+    width: 24px;
+    height: 24px;
+    fill: var(--footer-text-color);
+}
+
+.fotter-icons-link:hover,
+.fotter-icons-link:focus{
+    background-color: #31D0AA;
 }
 
 
@@ -401,18 +522,8 @@ ul{
     margin-bottom: 72px;
 }
 
-.customers-list{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-   
-}
-.customers-list li{
-    width: 168px;
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
+
+
 
 /* PORTFOLIO */
 
@@ -432,13 +543,18 @@ ul{
     border: 1px solid #E7E9FC;
     border-radius: 4px;
 
+    
+
     padding: 12px 24px 12px 24px;
 
    }
  .breadcrumb-button:hover,
  .breadcrumb-button:focus{
-   background-color: var(--accent_color);
-   color:var(--secondary-text-color)
+   background-color: var(--accent_color);       
+   color:var(--secondary-text-color);
+   border: 1px solid var(--accent_color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   
    }
 
    /* portfolio-main */
@@ -458,6 +574,14 @@ ul{
    .portfolio-main-list li{
     width: calc((100% - 48px) / 3);
     
+   }
+   .portfolio-main-link{
+    display: block;
+   }
+
+   .portfolio-main-link:hover,
+   .portfolio-main-link:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    }
 
    .portfolio-item-wraper{
@@ -553,17 +677,4 @@ ul{
     margin-bottom: 16px;
 }
 
-.fotter-icons-list{
-    display: flex;
-    gap: 24px;
 
-    
-}
-
-.fotter-icons-list li{
-    background-color: var(--icons-bg-color);
-    border-radius:50%;
-    display: block;
-    width: 40px;
-    height: 40px;
-}
