@@ -315,7 +315,7 @@ ul{
     display: flex;
     gap: 24px;
     justify-content: center; 
-    margin-bottom: 32px;
+    margin-top:8px;
 }
 
 .section-icons-list li{
